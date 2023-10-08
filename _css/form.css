@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+   
+form#contato {
+     width: 500px;
+	 height:88px;
+     margin: auto;    /*deixa o formulário centralizado*/
+
+	 box-shadow: 0px 0px 10px rgba(255,0,0,0.8);  
+}
+
+form#novidades {
+     width: 200px;
+	 height:88px;
+     margin: auto;    /*deixa o formulário centralizado*/
+
+	 box-shadow: 0px 0px 10px rgba(255,0,0,0.8);  
+}
+
+input, textarea {
+     font-family: sans-serif;
+     font-weight: normal;
+     font-size: 13pt;
+     background-color: rgba(255,255,255,.8);
+}
+
+input:hover, textarea:hover {
+     background-color: #dddddd;     /*ao se passar como o mouse por cima dos campos a cor muda*/
+}
+
+legend {
+     color: #000000;
+     font-weight: bold;
+     font-size: 13pt;
+     font-family: sans-serif;
+}
+
+fieldset#contato {
+     border-color: #000000;
+     margin: 20px;
+	 height:55px;
+	 background-color:rgba(255,0,0,.3);
+}
+
+fieldset#mensagem {
+     border-color: #000000;
+     margin: 20px;
+	 margin-top:-65px;
+	 margin-left:150px;
+	 width: 250px;
+	 height:42px;
+
+}
+
+legend{
+     color: #000000;
+	 font-size:10px;
+	 
+}
+
+p#cNome {
+    margin-top:3px;
+    margin-left: -15px;
+	color:#000000;
+	font-size:10px;
+} 
+
+p#cEmail{
+    margin-top:5px;
+    margin-left: -15px;
+	color:#000000;
+	font-size:10px;
+} 
+
+p#texto_prazos{
+    margin-top:5px;
+    margin-left: -5px;
+	color:#000000;
+	font-size:12px;
+
+}
+
+p#sair_novidades{
+    margin-top:-19px;
+    margin-left: 10px;
+	font-size:12px;
+
+}
+
+p#sair_prazos{
+    margin-top:-19px;
+    margin-left: 10px;
+	font-size:12px;
+}
+
+p#sair_contato{
+    margin-top:-19px;
+    margin-left: 10px;
+	font-size:12px;
+}
+
+textarea#cMsg {
+   margin-left:3px;
+   width: 235px;
+   background-color: rgba(255,255,255,.4);                               /*transparência na imagem*/
+   border: 1px solid #000000;
+   height: 30px;
+}
+
+input#cNome {
+   background-color: rgba(255,255,255,.4);                               /*transparência na imagem*/
+} 
+
+input#cMail {
+  background-color: rgba(255,255,255,.4);                               /*transparência na imagem*/
+}
+ 
+input#cNome:hover {
+     background-color: #dddddd;     /*ao se passar como o mouse por cima dos campos a cor muda*/
+}
+
+input#cMail:hover {
+     background-color: #dddddd;     /*ao se passar como o mouse por cima dos campos a cor muda*/
+}
+
+textarea#cMsg:hover {
+     background-color: #dddddd;     /*ao se passar como o mouse por cima dos campos a cor muda*/
+}
+
+ input#botao_form_nov{
+     display:block;
+	 margin-top:-18px;
+     margin-left: 137px; 
+	 width:33px;
+	 height:15px;
+ } 
+ 
+ input#botao_form{
+     display:block;
+     margin-left: 437px; 
+	 margin-top:-18px;
+	 width:33px;
+	 height:15px;
+ } 
+ 
+input#cMail {
+    width:100px;
+}
+
+input#cNome {
+    width:101px;
+}

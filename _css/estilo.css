@@ -1,0 +1,413 @@
+﻿@font-face {                                                        /*adicionar fontes externas*/
+     font-family: "Gabriola";                                      /*nome que desaja dar a fonte para chamada*/
+     src: url("../fonts/ufonts.com_gabriola.ttf");               /*caminho da fonte*/
+	 src: url("../fonts/ufonts.com_gabriola.eot");              /*apenas para IE*/
+     src: url("../fonts/ufonts.com_gabriola.woff");      /*para android 6*/
+}
+
+html,body{
+	height: 100%;
+	font-family: 'Gabriola', sans-serif;	
+	color: #FFF;
+}   
+	
+div#interface {                                                     /*configuração do layout da página */
+    width: 1150px; 
+    background-color: #ffffff;                                      /*cor de fundo da interface*/
+    margin: -20px auto 0px auto;                                    /*cor de fundo da interface  topo direita rodapé esquerda -com essas configurações a página ficará sempre centralizada na tela-*/
+    }
+
+
+section#pesquisa{
+	 width: auto;
+	 height:1000px;
+	}
+	
+	fieldset#sacola {
+    border: 1px solid rgba(0,0,0,.3);
+    border-color: rgba(0,0,0,.3);
+    margin-top: 7%;
+    margin-left: 3%;
+    width:90%;
+    box-shadow: 5px 5px 3px rgba(0,0,0,.3);
+    border-radius: 5px 5px 5px 5px;
+}
+
+	table#carrinho {
+	width:100%;
+        border: none;
+	}
+
+	#carrinho_linhas {
+	width:100%;
+        border: 1px solid #000;
+	}
+	
+	
+	td#iMg{
+	width:100px;
+	}
+	
+        td#nOme {
+	font-size:30px;
+	color:#ffffff;
+	width:280px;
+	text-align:center;
+	background-color:#b87333;
+	border-radius: 5px 0px 0px 0px;
+	}
+	
+	td#qUant {
+	font-size:30px;
+        color:#ffffff;
+	background-color:#b87333;
+	width:60px;
+	text-align:center;
+	}
+	
+	td#rS {
+	font-size:30px;
+        color:#ffffff;
+	background-color:#b87333;
+	width:80px;
+	text-align:center;
+	}
+
+	td#add {
+	font-size:30px;
+        color:#ffffff;
+	background-color:#b87333;
+	width:90px;
+	text-align:center;
+	}
+
+	input#atualizar {
+	width:30px;
+	text-align:center;
+	vertical-align: middle;
+	border-radius: 5px 5px 5px 5px;
+	}
+
+	input#imagem_atualizar{
+	vertical-align: middle;
+	width:40px;
+	}
+	
+	#imagem_atualizar input:hover{
+        background-color: #fff;
+	}
+
+	td#sTot {
+	font-size:30px;
+	color:#ffffff;
+	background-color:#b87333;
+	width:70px;
+	text-align:center;
+	}
+
+	td#eXcl {
+	font-size:30px;
+	color:#ffffff;
+	background-color:#b87333;
+	width:50px;
+	text-align:center;
+        border-radius: 0px 5px 0px 0px;
+	}
+
+	input#excluir{
+	vertical-align: middle;
+	width:40px;
+	}
+	
+	td#nOme_bd {
+	font-size:30px;
+        color: #b87333;
+	text-align:center;
+        border-bottom: 1px solid #000;
+	}
+	
+	td#qUant_bd {
+	font-size:30px;
+        color: #b87333;
+	text-align:center;
+        border-bottom: 1px solid #000;
+	}
+
+	td#rS_bd {
+	font-size:30px;
+        color: #b87333;
+	text-align:center;
+        border-bottom: 1px solid #000;
+	}
+
+	td#add_bd {
+	font-size:30px;
+	text-align:center;
+        border-bottom: 1px solid #000;
+	}
+
+	td#sTot_bd {
+        font-size:30px;
+        color: #b87333;
+	text-align:center;
+        border-bottom: 1px solid #000;
+	}
+
+	td#eXcl_bd {
+	font-size:30px;
+	text-align:center;
+        border-bottom: 1px solid #000;
+	}
+
+	td#vTot {
+	font-size:30px;
+	color:#ffffff;
+	background-color:#b87333;
+	border-radius: 0px 0px 0px 5px;
+	}
+	
+        td#vTot1 {
+	font-size:30px;
+	color:#ffffff;
+	background-color:#b87333;
+	}
+
+	td#vTot2 {
+	font-size:30px;
+	color:#ffffff;
+	background-color:#b87333;
+	border-radius: 0px 0px 5px 0px;
+	}
+
+	td#vTot3 {
+	font-size:30px;
+	color:#ffffff;
+	background-color:#b87333;
+	}
+	
+	table#pAgFinal{
+        font-size:30px;
+        color: #b87333;
+        text-align: center;
+	width:100%;
+	margin-top:10px;
+        border: none;
+	}
+	
+	td#eSpc{
+	width:620px;	
+	}
+ 
+
+header#cabecalho h1 img#logo {                                               /*todo objeto que for h1 no cabeçalho*/
+    width:200px;
+	height:60px;    
+    margin-top: 10px;
+    margin-left: 20px;	/*margem abaixo*/
+}
+
+header#cabecalho h3 {      /*configuração da do rodapé da página*/
+    margin-top: 25px;
+}
+
+iframe#frame-spec_contato{
+  display:block;
+  margin-left:235px;
+  margin-top:-140px;
+  width: 600px;
+  height: 88px;
+  border: none;          /* remoção da borda do iframe*/
+  overflow: hidden;      /* evita que a rolagem da página aconteça. obs.: não funciona em todos os navegadores foi adicionado na tag iframe
+na página specs - scrolling:"no"*/
+}
+
+form#procurar {
+   width: 230px;
+   margin-left: 900px;
+   margin-top: -85px;
+}
+
+input#Ctext{
+   height: 16px;
+   width:160px;
+   font-size:10px;
+   border: 1px solid rgba(255,0,0,.4);
+    border-color: rgba(255,0,0,.4);
+	border-radius: 5px 0px 0px 5px;
+}
+
+input:hover, textarea:hover {
+     background-color: #fff;     /*ao se passar como o mouse por cima dos campos a cor muda*/
+}
+
+input#Cimg{
+   margin-top:9px;
+   margin-left:-3px;
+   height: 20px;
+   width: 50px;
+   
+}
+
+header#cabecalho h2 {      /*configuração da do rodapé da página*/
+    margin-top: 50px;
+    clear: both; /*faz com que seja limpa toda divisão feita e deixa o conteúdo do rodapé fora da divisão*/
+    border-top: 50px solid #ff0000;
+    text-align: center;
+    font-size: 12pt;
+}
+
+
+
+
+
+
+a{
+text-decoration: none;
+color: #b87333
+}
+
+a:hover {
+
+}
+
+
+#rodape{
+position: absolute;
+bottom: 0;
+left: 0;
+ width: 100%;
+height: 250px;
+background: #b87333;
+}
+
+
+#empresaProm{
+position: absolute;
+margin-top: 25px;
+margin-left:30px;
+font-family: 'Gabriola', sans-serif;	
+color: #FFF;
+font-size: 60px;
+text-align: center;
+width: 40%;
+height: 150px;
+background-color: #8b4513;
+}
+
+#promocoes{
+  position: absolute;
+  font-color: #000;
+  margin-top: 15px;
+  margin-left: 45%;
+  width: 50%;
+  height: 7%; 
+  opacity: 0.7;
+}
+
+
+#cNomeProm{
+  margin-left: 10%;
+  width: 81%;
+  border: none; 
+  font-size: 18px;  
+  border: 1px solid #000;
+}
+
+#iNomeProm{
+  margin-left: 10%;
+  width: 100%;
+  font-weight: 700;  
+  color: #000;
+}
+
+#iMailProm{
+  margin-left: 10%;
+  width: 100%;	
+  font-weight: 700; 
+  color: #000;
+}
+
+#cMailProm{
+  margin-left: 10%;
+  width: 81%;	
+  border: none;
+  font-size: 18px;  
+  border: 1px solid #000;
+  color: #000;
+}
+
+
+#botaoProm{
+  font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+  font-weight: 700; 
+  color: #FFF;
+  margin-left: 10%;
+  width: 81%;
+  height: 30px;
+  background-color: #000;
+  border: 1px solid #FFF;
+}
+
+#botaoProm:hover{
+  background-color: rgba(79,79,79,0.7);	
+}
+
+#cNomeProm{
+  margin-left: 10%;
+  width: 81%;
+  border: none; 
+  font-size: 18px;  
+  border: 1px solid #000;
+}
+
+#iNomeProm{
+  margin-left: 10%;
+  width: 100%;
+  font-weight: 700;  
+  color: #000;
+}
+
+#iMailProm{
+  margin-left: 10%;
+  width: 100%;	
+  font-weight: 700; 
+  color: #000;
+}
+
+#btnFinalizar{
+  font-family: 'Gabriola', sans-serif;
+  font-size: 28px; 
+  color: #8b4513;
+  margin-top: -10%;
+  margin-left: 10%;
+  width: 50%;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+}
+
+#btnFinalizar:hover {
+  background-color: #000;
+  color: #FFF;
+}
+
+
+
+#continuarComprando:hover{
+  background-color: #000;
+  color: #FFF;
+}
+
+
+
+#dadosComprador{
+  width:100%;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 28px; 
+  color: #fff;
+  background-color: #8b4513;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid rgba(0,0,0,.3);
+  border-color: rgba(0,0,0,.3);
+}

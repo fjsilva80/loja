@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+
+body {
+       font-family: Arial;
+       font-size: 10pt;
+	   background-color:#ffffff;
+       }
+
+form#selecionar_27{
+       margin-left:-70px;
+}
+
+table#tabela{
+    border: 1px solid rgba(255,0,0,.4);
+	margin-left:70px;
+	width:240px;
+	border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	color: rgba(255,0,0,.8);
+}
+
+table#tabela_2{
+    border: 1px solid rgba(255,0,0,.4);
+	margin-left:58px;
+	width:240px;
+	border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	color: rgba(255,0,0,.8);
+}
+
+table#tabela_3{
+    border: 1px solid rgba(255,0,0,.4);
+	margin-left:75px;
+	width:240px;
+	border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	color: rgba(255,0,0,.8);
+}
+
+table#tabela_4{
+    border: 1px solid rgba(255,0,0,.4);
+	margin-left:68px;
+	width:240px;
+	border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	color: rgba(255,0,0,.8);
+}
+
+table#tabela_5{
+    border: 1px solid rgba(255,0,0,.4);
+	margin-left:80px;
+	width:370px;
+	border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	color: rgba(255,0,0,.8);
+}
+
+table#tabela_6{
+    border: 1px solid rgba(255,0,0,.4);
+	margin-left:79px;
+	width:240px;
+	border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	color: rgba(255,0,0,.8);
+}
+
+select#tamanho{
+border: 1px solid rgba(255,0,0,.4);
+border-radius: 5px 5px 5px 5px;
+color:rgba(255,0,0,.8);
+}
+
+select#quantidade{
+border: 1px solid rgba(255,0,0,.4);
+border-radius: 5px 5px 5px 5px;
+color:rgba(255,0,0,.8);
+}
+
+select#cores{
+border: 1px solid rgba(255,0,0,.4);
+border-radius: 5px 5px 5px 5px;
+color:rgba(255,0,0,.8);
+}
+
+#cores {
+    
+		}
+		.azul {
+			background-color: #0000FF;
+			color: #0000FF;
+		}
+		.vermelho {
+			background-color: #FF0000;
+			color: #FF0000;
+		}
+		.cinza {
+			background-color: #A9A9A9;
+			color: #A9A9A9;
+			}
+		
+article {
+       margin-bottom: 800px;
+	   margin:0px;
+	   margin-left:0px;
+}
+
+fieldset {
+     border: 1px solid rgba(255,0,0,.4);
+     border-color: rgba(255,0,0,.4);
+     margin: 2px;
+	 height:40px;
+	 border-radius: 5px 5px 5px 5px;
+	 color: rgba(255,0,0,.8);
+	 box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+}
+
+legend {
+     color: #ff0000;
+     font-weight: bold;
+     font-size: 13pt;
+     font-family: sans-serif;
+}
+
+input#Iescolher{
+     display:block;
+     width:50px;
+	 height:20px;
+	 margin-left:3px;
+}
+
+input#Iescolher_cor{
+     display:block;
+	 margin-left:3px;
+     width:50px;
+	 height:20px;
+}
+
+input#id{
+     font-size:12px;
+	 text-align:center;
+     width:300px;
+	 border: 1px solid rgba(255,0,0,.4);
+	 border-radius: 5px 5px 5px 5px;
+	 color: rgba(255,0,0,.8);
+}
+
+input#qtd{
+     font-size:12px;
+	 text-align:center;
+     width:30px;
+	 border: 1px solid rgba(255,0,0,.4);
+	 border-radius: 5px 5px 5px 5px;
+	 color: rgba(255,0,0,.8);
+}
+
+input#Icomprar{
+     display:block;
+	 margin-top:-21px;
+	 margin-left:345px;
+     width:50px;
+	 height:22px;
+}
+
+input:hover, textarea:hover {
+     background-color: #dddddd;     /*ao se passar como o mouse por cima dos campos a cor muda*/
+}

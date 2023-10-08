@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+
+article {
+    margin-bottom: 800px;
+	margin:0px;
+	margin-left:-10px;
+}   
+
+fieldset#Fcep {
+    border: 1px solid rgba(0,0,0,.4);
+    border-color: rgba(0,0,0,.4);
+    margin: 2px;
+	height:90px;
+	width:320px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	border-radius: 5px 5px 5px 5px;
+	 
+}
+
+legend#Lcep {
+    color: rgba(0,0,0,.3);
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+table#titulo{
+	width:248px;
+	margin-left:5px;
+	color: rgba(0,0,0,.3);
+    font-weight: bold;
+    font-size: 12px;
+    font-family: sans-serif;
+	border:1px solid #ffffff;
+}
+
+td#envio {
+    width:68px;
+	text-align:center;
+	border:1px solid #ffffff;
+}
+td#cep {
+    width:138px;
+	text-align:center;
+	border:1px solid #ffffff;
+}
+
+td#quantidade 
+       {  
+   border:1px solid #ffffff;
+   
+}
+
+
+select#opcoes{
+    font-size:13px;
+	font-style:Arial;
+	color: rgba(0,0,0,.4);
+	border-radius: 5px 5px 5px 5px;
+}
+
+input#cep_destino{
+    width:130px;
+    font-size:13px;
+    font-style:Arial;
+	text-align:center;
+	color:rgba(0,0,0,.4);
+	border-radius: 5px 5px 5px 5px;
+}
+
+input#qtd_prod{
+    width:30px;
+    font-size:13px;
+	font-style:Arial;
+	text-align:center;
+	color:rgba(0,0,0,.4);
+	border-radius: 5px 5px 5px 5px;
+}
+
+input#Iprocurar{
+    display:block;
+	margin-left:5px;
+    width:50px;
+	height:20px;
+	background-image:url('../_imagens/procurar-cep.png');
+	border:none;
+}
+
+input:hover, textarea:hover {
+    background-color: #dddddd;     /*ao se passar como o mouse por cima dos campos a cor muda*/
+}
+
+p#mensagem{
+    font-style: arial;
+    font-size:15px;
+    color:rgba(0,0,0,.4);
+    margin-left:60px;
+}
+
+div#mensagem_correio {
+    width:510px;
+	margin-left:5px;
+	color: #ff0000;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: sans-serif;
+	text-align:justify;
+}
+
+p#mensagem_correio{
+    font-style: arial;
+    font-size:15px;
+    color: #ff0000;
+    margin-left:20px;
+}

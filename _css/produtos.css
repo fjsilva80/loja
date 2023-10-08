@@ -1,0 +1,700 @@
+@charset "UTF-8";                                                    /* codificação para português */
+
+body {    
+     background-color: rgba(255,0,0,.1);                                     /* cor de fundo da página*/
+     font-family: Arial, sans-serif;                                /* formatação de todo texto da página que já não esteja formatado*/
+    }    
+
+section#corpo {      /*configuração da parte principal da página*/
+     display: block;
+     width: 550px;
+     float: left;     /*irá permitir que a seção principal flutue entre um bloco em outro.*/
+}
+
+ul#album-fotos-lightbox {
+    width: 1000px;
+    margin-left: 80px;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+	margin-top:-80px;
+}
+
+ul#album-fotos-lightbox li {
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin: 30px;
+  border: 5px solid white;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  -ms-box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  -o-box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  -webkit-transition: all .4s ease-in;
+  -moz-transition: all .4s ease-in;
+  -ms-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}                                                    /*efeito de transição das imagens em zoom, onde o all é o tempo e ease-in o tipo de transição*/
+
+
+ul#album-fotos-lightbox li:hover {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}                                                              /*efeito de zoom out para todas as fotos em alguns navegadores após a conversão no http://expressprefixr.herokuapp.com/*/
+
+
+#album-fotos-lightbox li a {    /*configuração dos links a href */
+     color: #ffffff;
+     text-decoration: none;
+	 margin-left:-8px;
+}
+
+#album-fotos-lightbox li a:hover {   /*ao passar o mouse as letras no href ficarão na cor branca */
+     color: #cecece;
+}
+
+ul#album-fotos-lightbox li#foto01lightbox {
+    background: url('../_imagens/01.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto01lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto02lightbox {
+    background: url('../_imagens/02.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto02lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto03lightbox {
+    background: url('../_imagens/03.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto03lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto04lightbox {
+    background: url('../_imagens/04.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto04lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto05lightbox {
+    background: url('../_imagens/05.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto05lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto06lightbox {
+    background: url('../_imagens/06.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto06lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto07lightbox {
+    background: url('../_imagens/07.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto07lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto08lightbox {
+    background: url('../_imagens/08.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto08lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto09lightbox {
+    background: url('../_imagens/09.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto09lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto10lightbox {
+    background: url('../_imagens/10.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto10lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto11lightbox {
+    background: url('../_imagens/11.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto11lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto12lightbox {
+    background: url('../_imagens/12.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto12lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto13lightbox {
+    background: url('../_imagens/13.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto13lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto14lightbox {
+    background: url('../_imagens/14.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto14lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto15lightbox {
+    background: url('../_imagens/15.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto15lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto16lightbox {
+    background: url('../_imagens/16.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto16lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto17lightbox {
+    background: url('../_imagens/17.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto17lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto18lightbox {
+    background: url('../_imagens/18.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto18lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto19lightbox {
+    background: url('../_imagens/19.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto19lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto20lightbox {
+    background: url('../_imagens/20.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto20lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto21lightbox {
+    background: url('../_imagens/21.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto21lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto22lightbox {
+    background: url('../_imagens/22.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto22lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto23lightbox {
+    background: url('../_imagens/23.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto23lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto24lightbox {
+    background: url('../_imagens/24.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto24lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto25lightbox {
+    background: url('../_imagens/25.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto25lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto26lightbox {
+    background: url('../_imagens/26.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto26lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto27lightbox {
+    background: url('../_imagens/27.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto27lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto28lightbox {
+    background: url('../_imagens/28.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto28lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto29lightbox {
+    background: url('../_imagens/29.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto29lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto30lightbox {
+    background: url('../_imagens/30.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto30lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto31lightbox {
+    background: url('../_imagens/31.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto31lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto32lightbox {
+    background: url('../_imagens/32.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto32lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto33lightbox {
+    background: url('../_imagens/33.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto33lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto34lightbox {
+    background: url('../_imagens/34.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto34lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto35lightbox {
+    background: url('../_imagens/35.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto35lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto36lightbox {
+    background: url('../_imagens/36.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto36lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto37lightbox {
+    background: url('../_imagens/37.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto37lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto38lightbox {
+    background: url('../_imagens/38.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto38lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto39lightbox {
+    background: url('../_imagens/39.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto39lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto40lightbox {
+    background: url('../_imagens/40.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto40lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto41lightbox {
+    background: url('../_imagens/41.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto41lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto42lightbox {
+    background: url('../_imagens/42.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto42lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto43lightbox {
+    background: url('../_imagens/43.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto43lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto44lightbox {
+    background: url('../_imagens/44.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto44lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto45lightbox {
+    background: url('../_imagens/45.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto45lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto46lightbox {
+    background: url('../_imagens/46.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto46lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto47lightbox {
+    background: url('../_imagens/47.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto47lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+ul#album-fotos-lightbox li#foto48lightbox {
+    background: url('../_imagens/48.jpg') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: 50% 50%;                               /*deixa a imagem exibida no centro*/
+    background-size: 400px 400px;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos-lightbox li#foto48lightbox:hover{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+
+asside#lateral {      /*configuração da parte lateral da página*/
+     display: block;
+     width: 550px;
+     float: right;     /*irá permitir que a seção lateral flutue entre um bloco em outro.*/
+     background-color: #ffffff;
+     padding: 1px;
+     margin-top: 10px;
+}
+
+p#produto1 {
+     font-family: Arial, sans-serif;
+	 color: #000000;
+	 font-size: 26px;
+	 margin-left:90px;
+}
+
+p#produto2 {
+     font-family: Arial, sans-serif;
+	 color: #000000;
+	 font-size: 26px;
+	 margin-left:90px;
+	 margin-top:-5px;
+}
+
+iframe#frame-spec_1{
+  margin-left:30px;
+  margin-top:-120px;
+  width: 400px;
+  height: 280px;
+  border: none;          /* remoção da borda do iframe*/
+  overflow: hidden;      /* evita que a rolagem da página aconteça. obs.: não funciona em todos os navegadores foi adicionado na tag iframe
+na página specs - scrolling:"no"*/
+}
+
+iframe#frame-spec{
+  width: 430px;
+  height: 280px;
+  border: none;          /* remoção da borda do iframe*/
+  overflow: hidden;      /* evita que a rolagem da página aconteça. obs.: não funciona em todos os navegadores foi adicionado na tag iframe
+na página specs - scrolling:"no"*/
+}
+
+p#produto18 {
+     font-family: Arial, sans-serif;
+	 color: #000000;
+	 font-size: 26px;
+	 margin-left:30px;
+}
+
+p#produto47 {
+     font-family: Arial, sans-serif;
+	 color: #000000;
+	 font-size: 26px;
+	 margin-left:60px;
+}
+
+p#produto35 {
+     font-family: Arial, sans-serif;
+	 color: #000000;
+	 font-size: 26px;
+	 margin-left:60px;
+}

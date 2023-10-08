@@ -1,0 +1,96 @@
+@charset "UTF-8";
+	   
+form {
+     width: 500px;
+     margin: auto;    /*deixa o formulário centralizado*/
+}
+
+input, textarea {
+     font-family: sans-serif;
+     font-weight: normal;
+     font-size: 13pt;
+     background-color: rgba(255,255,255,.8);
+}
+
+input:hover, textarea:hover {
+     background-color: #dddddd;     /*ao se passar como o mouse por cima dos campos a cor muda*/
+}
+
+legend {
+     color: #000000;
+     font-weight: bold;
+     font-size: 13pt;
+     font-family: sans-serif;
+}
+
+fieldset#mensagem {
+     color:#000000;
+     border-color: #000000; 
+     margin: 20px;
+}
+
+fieldset#contato {
+     color:#000000;
+     border-color: #000000; 
+     margin: 20px;
+}
+
+legend{
+     color: #000000;
+}
+ 
+textarea#cMsg {
+   margin: auto;
+   width: 365px;
+   background-color: rgba(255,255,255,.4);                               /*transparência na imagem*/
+}
+
+input#cNome {
+   background-color: rgba(255,255,255,.4);                               /*transparência na imagem*/
+} 
+
+p#cNome{
+   color:#000000;
+
+}
+
+input#cMail {
+  background-color: rgba(255,255,255,.4);                               /*transparência na imagem*/
+}
+ 
+ p#cEmail{
+   color:#000000;
+
+}
+ 
+p#texto_prazos {
+  color:#000000;
+
+}
+
+p#sair_novidades_index{
+  margin-left:10px;
+  margin-top:25px;
+}
+
+p#sair_prazos_index{
+  margin-top: 0px;
+  margin-left:10px;
+
+}
+
+p#sair_contato_index{
+  margin-top:25px;
+  margin-left:10px;
+
+}
+ 
+ 
+input#botao_novidades{
+	  margin-left:296px; 
+ }
+ 
+input#botao_contato{
+	  margin-left:296px; 
+ }
+ 

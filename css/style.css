@@ -1,0 +1,1331 @@
+﻿@font-face {                                                        /*adicionar fontes externas*/
+     font-family: "Gabriola";                                      /*nome que desaja dar a fonte para chamada*/
+     src: url("../fonts/ufonts.com_gabriola.ttf");               /*caminho da fonte*/
+	 src: url("../fonts/ufonts.com_gabriola.eot");              /*apenas para IE*/
+     src: url("../fonts/ufonts.com_gabriola.woff");      /*para android 6*/
+}
+
+
+* {
+    padding:0px;
+    margin:0px;
+}
+
+html,body{
+	height: 100%;
+	font-family: 'Gabriola', sans-serif;	
+	color: #FFF;
+	font-size: 19px;
+}
+
+img{
+	border: none;
+}
+
+p{
+  font-family: 'Gabriola', sans-serif;
+}
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.fadeIn {
+-webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+}
+
+
+.empresa{
+  margin-left: 20px;
+  width: 98%;
+  color: #000;
+  font-size: 50px;
+  border-bottom: 1px solid #000;
+
+}
+
+/* menu menor */
+
+
+.containerMenu, .button, .nav{
+  position: absolute;
+}
+
+.containerMenu {
+  margin: auto;
+  top: 0%;
+  left: 0%;
+  margin-left: 0px;
+}
+
+#toggle {
+  display: none;
+}
+
+.button {
+  z-index: -1;
+  width: 0px;
+  height: 0px;
+  background: url('menu.png') no-repeat; 
+  background-size: 0%;
+  background-position: 0%;
+  border-radius: 0%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 1px 3px 10px 0 rgba(#000000, 0.3);
+  cursor: pointer;
+  
+  &:before {
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #FFF;
+    transform: rotate(90deg);
+  }
+  &:after {
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #FFF;
+  }
+}
+
+.navMenuMenor {
+  transform: translateY(-10%);
+  opacity: 0;
+  top: 0px;
+  left: -50px;
+  transition: all 0.5s ease-in-out;
+  background: #FFF;
+  width: 0px;
+  border-radius: 5px;
+  transform: translateY(0%);
+  box-shadow: 2px 3px 10px 0 rgba(#000000, 0.1);
+}
+
+.navMenuMenor a {
+  text-align: center;
+  display: block;
+  margin: 0px;
+  color: #F28482;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#toggle:checked ~ .navMenuMenor {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+#toggle:checked ~ .button {
+  transform: rotate(0deg);
+  background: url('fechar.png') no-repeat; 
+  background-size: 0%;
+  background-position: 0%;
+  box-shadow: 0 0 0 0 transparent;
+}
+
+
+/* menu */
+
+.menu{
+  background: #FFF;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+/* Remove as bolinhas do lado das listas */
+.menu .menu-list, .menu .sub-menu{
+	text-align: center;
+  list-style: none;
+}
+/* Configura todos os links do nosso menu */
+.menu a{
+  color: #000;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing:0.2em;
+}
+/* Faz os <li>s ficarem na horizontal */
+.menu > .menu-list > li{
+  float: center;
+  position: relative;
+    display: inline-block;
+}
+/* Configura os links do menu principal */
+.menu > .menu-list > li > a {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  width: auto;
+  margin: 0 0px;
+  background: #FFF;
+}
+/* Configura o fundo do menu principal quando com mouse hover */
+.menu > .menu-list > li:hover a {
+  background: #fff;
+}
+/* Mostra o submenu no evento de mouse hover */
+.menu > .menu-list > li:hover > .sub-menu {
+  display: block;
+}
+/* Configura o estilo do submenu */
+.menu > .menu-list > li > .sub-menu {
+  position: absolute;
+  top: 63px;
+  left: 0px;
+  background: blue;
+  min-width: 200px;
+  z-index: 1000;
+  display: none;
+}
+/* Configura os links do submenu */
+.menu > .menu-list > li > .sub-menu > li > a {
+	padding: 15px 20px;
+}
+/* Clearfix para o menu */
+.menu:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.divImg{
+ position:absolute;	
+  margin-left: 1%;
+ top: 10px;
+}
+
+#logo{
+  position:relative;	
+ border: none;
+ width: 30%;
+ height: 30%;
+}
+.divSacola{
+ position:absolute;	
+ margin-left: 95%;
+ top: 0%;
+}
+
+#sacola{
+ position:relative;	
+ border: none;
+ width: 90%;
+ height: 90%;
+}
+
+/*frame*/
+.frame_index{
+position: absolute;
+ margin-top:4%;  
+left: 0;
+ width: 100%;
+ height:2200px;
+ border: none;
+}
+
+#rodape{
+position: absolute;
+bottom: 0;
+left: 0;
+ width: 100%;
+height: 250px;
+background: #b87333;
+}
+
+
+#empresaProm{
+position: absolute;
+margin-top: 25px;
+margin-left:30px;
+font-family: 'Gabriola', sans-serif;	
+color: #FFF;
+font-size: 60px;
+text-align: center;
+width: 40%;
+height: 150px;
+background-color: #8b4513;
+}
+
+#icone{
+position: absolute;
+margin-top: 0px;
+margin-left: 47%;
+font-family: 'Gabriola', sans-serif;	
+color: #FFF;
+font-size: 20px;
+width: 100px;
+height: auto;
+text-align: center;
+border: none;
+}
+
+#cadeado{
+
+}
+
+#pag{
+position: absolute;
+margin-top: 5px;
+margin-left: 82%;
+font-family: 'Gabriola', sans-serif;	
+color: #FFF;
+font-size: 20px;
+width: auto;
+height: auto;
+text-align: center;	
+border: none;
+}
+
+#programador{
+	position: absolute;
+	font-family: 'Gabriola', sans-serif;
+	font-size: 13px;
+	color: #FFF;
+	width: 100%;
+	text-decoration: none;
+	margin-top: 110px;
+	text-align: center;	
+}
+/*pagina home*/
+
+article#tela1{
+
+}
+
+#imagemSlide3{
+	width: 100%;
+	height: 500px;
+
+
+}
+
+.codrops-header {
+	z-index: 1000;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background: #000;
+	opacity:.5;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 200;
+	color: yellow;
+	font-size: 5em;
+	line-height: 1;
+	
+}
+
+.codrops-header h1 span {
+	display: block;
+	padding: 0.5em 0 0.6em 0.1em;
+	font-size: 40%;
+	line-height: 1.2;
+	opacity: 1;
+}
+
+
+.sub-menu{
+position: absolute;
+top: 50px;
+}
+
+.destaque{
+	position: absolute;
+	margin-top: 42%;
+	width: 100%;
+	height:auto;
+	text-align: center;
+	font-family: 'Gabriola', sans-serif;
+	font-size: 50px;
+	color:  #FF69B4;	
+}
+
+ul#album-fotos {
+    position: absolute;
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+    list-style: none;
+	border: none;
+}
+
+ul#album-fotos li {
+  float: left;
+  width: 20%;
+  height: 500px;
+  margin: 30px;
+  border: 1px solid #FFF;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  -ms-box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  -o-box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  -webkit-transition: all .4s ease-in;
+  -moz-transition: all .4s ease-in;
+  -ms-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}                                                    /*efeito de transição das imagens em zoom, onde o all é o tempo e ease-in o tipo de transição*/
+
+
+/*ul#album-fotos li:hover {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  box-shadow: 1px 1px 30px rgba(255,255,255,.9);
+}                                                              /*efeito de zoom out para todas as fotos em alguns navegadores após a conversão no http://expressprefixr.herokuapp.com/*/
+
+   /* configuração dos nomes dos produtos */
+   
+ul#album-fotos li span#foto1 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto1 {
+   opacity:1;
+}
+
+ul#album-fotos li span#foto2 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto2 {
+   opacity:1;
+}
+
+ul#album-fotos li span#foto3 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto3 {
+   opacity:1;
+}
+
+ul#album-fotos li span#foto4 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto4 {
+   opacity:1;
+}
+
+ul#album-fotos li span#foto5 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto5 {
+   opacity:1;
+}
+
+ul#album-fotos li span#foto6 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto6 {
+   opacity:1;
+}
+
+
+ul#album-fotos li span#foto7 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto7 {
+   opacity:1;
+}
+
+ul#album-fotos li span#foto8 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto8 {
+   opacity:1;
+}
+
+ul#album-fotos li span#foto9 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto9 {
+   opacity:1;
+}
+
+
+ul#album-fotos li span#foto10 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto10 {
+   opacity:1;
+}
+
+ul#album-fotos li span#foto11 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto11 {
+   opacity:1;
+}
+
+
+ul#album-fotos li span#foto12 {
+   opacity: 0;
+   background: url('../_imagens/olho.png') no-repeat;
+   background-color: rgba(79,79,79,0.7);
+   background-position: 50% 50%; 
+   background-size: 50%;
+   font-family: Comic Sans MS, sans-serif;
+   padding: 0px 0px 127% 100%;
+   }                                                                /*configuração do letreiro dentro das fotos*/
+
+ul#album-fotos li:hover span#foto12 {
+   opacity:1;
+}
+
+
+
+
+ul#album-fotos li#foto1 {
+    background: url('../_imagens/imgA.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+                                                             /*efeito de zoom na imagem*/
+
+ul#album-fotos li#foto2 {
+    background: url('../_imagens/imgB.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+                                                     /*efeito de zoom na imagem*/
+ul#album-fotos li#foto3 {
+    background: url('../_imagens/imgC.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                               /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+	
+ul#album-fotos li#foto4 {
+    background: url('../_imagens/imgD.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                            /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+
+ul#album-fotos li#foto5 {
+    background: url('../_imagens/imgE.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                            /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos li#foto6 {
+    background: url('../_imagens/imgF.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                            /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+
+ul#album-fotos li#foto7 {
+    background: url('../_imagens/imgG.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                            /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+
+ul#album-fotos li#foto8 {
+    background: url('../_imagens/imgH.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                            /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+
+ul#album-fotos li#foto9 {
+    background: url('../_imagens/imgI.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                            /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+
+ul#album-fotos li#foto10 {
+    background: url('../_imagens/imgJ.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                            /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+
+ul#album-fotos li#foto11 {
+    background: url('../_imagens/imgL.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                            /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+ul#album-fotos li#foto12 {
+    background: url('../_imagens/imgM.png') no-repeat;    /*url da foto com o comando para não repetir*/
+    background-position: auto;                               /*deixa a imagem exibida no centro*/
+    background-size: 100%;                            /*tamanho original da imagem*/
+    background-color: #ffffff;
+} /*todos ul com foto serão incluidos*/
+
+
+
+
+/*página produtos*/
+
+
+#voltar{
+	position: relative;
+	margin: 4% 15% 10% 15%;
+	padding: 30px 0px 0px 0px;
+	font-weight: 700;
+	color: #000;
+	border-bottom: 1px solid #000;
+}
+
+#pagSeguroParc{
+		position: relative;
+		float: right;
+		color: #4F4F4F;
+}
+
+#pagSeguroParc:hover{
+		position: relative;
+		color: #FF69B4;
+}
+
+
+#linkVoltar{
+	text-decoration:none;
+	color: #000;
+}
+
+#iconeVoltar{
+	width: 3%;
+}
+
+
+#contorno{
+	position: absolute;
+	margin-top: 14%;
+	border: none;
+	text-align: center;
+	color: #000;
+        width: 19.45%;
+        font-size: 50px;
+        color: yellow;
+}      
+
+#imagemPrdt{
+	margin-top: -5%;
+	margin-left: 17.5%;
+	border: none;
+	width: auto;
+}
+
+#zoom_01{
+	position: relative;
+    width: 35%;
+    height:35%;	
+	border: 1px solid #000;
+}
+
+#nomeProduto{
+	position: absolute;
+	color: #4F4F4F;
+	font-weight: 700;
+	margin-top: -350px;
+	font-size: 25px;
+	margin-left: 40%;
+}
+
+#complemento{
+	position: absolute;
+	margin-top: -270px;
+	margin-left: 44%;
+	color: #000;
+	font-weight: 1;
+}
+
+#selecionar{
+	position: absolute;
+	margin-top: -240px;
+	margin-left: 40%;
+	width: auto;
+	border: none;
+}
+
+#tbEscolha{
+	color: #4F4F4F;
+	font-weight: 700;
+	border: none;
+	width: auto;
+        border: none;
+}
+
+#tamanho{
+	width: 50%;
+	font-weight: bold;
+	color: #4F4F4F;
+}
+
+#quantidade{
+	font-weight: bold;
+	color: #4F4F4F;
+}
+
+#Iescolher{
+	position:absolute;
+	top: 60px;
+	width: 210px;
+	height: 35px;
+	font-family: 'Gabriola', sans-serif;
+	font-size: 19px; 
+	font-weight: 700; 
+	color: #FFF;
+	background-color: #b87333;
+	border: 1px solid #fff;
+	border-radius:  5px 0px 5px 0px;
+	margin-left: -13%;
+}
+
+#Iescolher:hover{
+	background: #4F4F4F;
+}
+
+
+.informacoesProduto{
+  margin: 0% 15% 10% 15%;
+  background: #FFF;
+  display: inline-block;
+  width: 70%;
+  color: #000;
+  border: none;
+}
+
+#tdInformacoesProduto{
+	width: auto;
+	background:#000;
+	color: #FFF;
+}
+
+#tituloInformacoesProduto{
+	width: 50%;
+	background:#4F4F4F;
+	color: #FFF;
+	text-align: center;
+}
+
+#textoInformacoesProduto{
+	position: relative;
+	margin-top: 0px;
+	width: auto;
+	background:#FFF;
+	color: #000;
+	text-align: left;
+	border: 30px solid #fff;
+}
+
+
+#corpoTextoInforma{
+  background: #FFF;
+}
+
+/*página de contato */
+
+#titulo{ 
+  font-weight: 700;
+}
+
+#fContato{
+  position: absolute;
+  font-color: #000;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 90%;
+  height: 17%; 
+  background-color: #fff;
+  opacity: 0.7;
+  border: none;  
+
+}
+
+#titulo_contato{
+  margin-top: 5%;
+  color: #000;
+  text-align: center;
+  font-weight: 700;  
+  font-size: 70px;  
+}
+
+#usuario{
+  width: 99%;
+  height: 99%;
+  border: 1px solid #000;  
+  font-color: #000;
+
+}
+
+#iNome{
+  margin-left: 10%;
+  width: 100%;
+  font-weight: 700;  
+  color: #000;
+}
+
+#cNome{
+  margin-left: 10%;
+  width: 81%;
+  border: none; 
+  font-size: 18px;  
+  border: 1px solid #000;
+}
+
+#iMail{
+  margin-left: 10%;
+  width: 100%;	
+  font-weight: 700; 
+  color: #000;
+}
+
+#cMail{
+  margin-left: 10%;
+  width: 81%;	
+  border: none;
+  font-size: 18px;  
+  border: 1px solid #000;
+  color: #000;
+}
+
+#mensagem{
+	margin-left: 10%;
+  border: none;
+  font-weight: 700; 
+    color: #000;
+}
+
+
+.cMsg{
+  width: 90%;	
+  text-align: justify;
+  height: 150px;
+   color: #000;
+  border: 1px solid #000;
+}
+
+#botao{
+  font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+  font-weight: 700; 
+  color: #FFF;
+  margin-left: 10%;
+  width: 81%;
+  height: 30px;
+  background-color: #000;
+  border: 1px solid #FFF;
+}
+
+#botao:hover{
+  background-color: rgba(79,79,79,0.7);	
+}
+
+
+
+#promocoes{
+  position: absolute;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+  font-color: #000;
+  margin-top: 15px;
+  margin-left: 45%;
+  width: 50%;
+  height: 7%; 
+  opacity: 0.7;
+}
+
+
+#cNomeProm{
+  margin-left: 10%;
+  width: 81%;
+  border: none; 
+  font-size: 18px;  
+  border: 1px solid #000;
+}
+
+#iNomeProm{
+  margin-left: 10%;
+  width: 100%;
+  font-weight: 700;  
+  color: #000;
+}
+
+#iMailProm{
+  margin-left: 10%;
+  width: 100%;	
+  font-weight: 700; 
+  color: #000;
+}
+
+#cMailProm{
+  margin-left: 10%;
+  width: 81%;	
+  border: none;
+  font-size: 18px;  
+  border: 1px solid #000;
+  color: #000;
+}
+
+
+#botaoProm{
+  font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+  font-weight: 700; 
+  color: #FFF;
+  margin-left: 10%;
+  width: 81%;
+  height: 30px;
+  background-color: #000;
+  border: 1px solid #FFF;
+}
+
+#botaoProm:hover{
+  background-color: rgba(79,79,79,0.7);	
+}
+
+
+/*mapa*/
+
+#mapa{
+position: relative;
+margin-top: 35%;
+border: none;
+width: 100%;
+height:600px;
+}
+
+
+/*pagina login */
+
+#fSenha{
+border: nome;
+float: right;
+margin-right: 5%;
+width: 35%;
+}
+
+TxtDados{
+ font-family: 'Gabriola', sans-serif;
+ font-weight: 700; 
+ border: 1px solid #000;
+ width: 1000px;
+ margin-left: 5%;
+}
+
+
+#cNomeEmail{
+ font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+ font-weight: 700; 
+ border: 1px solid #000;
+ width: 60%;
+ margin-left: 5%;
+ margin-bottom: 2px;
+}
+
+#cMailSenha{
+font-family: 'Gabriola', sans-serif;
+font-size: 19px; 
+font-weight: 700; 
+border: 1px solid #000;
+width: 60%;
+margin-left: 5%;
+margin-bottom: 2px;
+}
+
+#botaoLogin{
+  font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+  font-weight: 700; 
+  color: #FFF;
+  margin-left: 5%;
+  width: 60.5%;
+  height: 30px;
+  background-color: #000;
+  border: 1px solid #000;
+}
+
+#botaoLogin:hover{
+  font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+  font-weight: 700; 
+  color: #000;
+  margin-left: 5%;
+  width: 60.5%;
+  height: 30px;
+  background-color: rgba(79,79,79,0.7);	
+  border: rgba(79,79,79,0.7);	
+}
+
+#botaoLogin_1{
+  font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+  font-weight: 700; 
+  color: #FFF;
+  margin-left: 5%;
+  width: 60%;
+  height: 30px;
+  background-color: #000;
+  border: 1px solid #FFF;
+}
+
+#botaoLogin_2{
+ background: url('../_imagens/sair.png') no-repeat;
+ width: 100px;
+ height: 100px;
+ float: right;
+ margin-right: 1%;
+ margin-bottom: 3%;
+ border: 1px solid #dbae84;
+}
+
+#botaoLogin_2:hover{
+ background: url('../_imagens/sair2.png') no-repeat;
+ width: 100px;
+ height: 100px;
+ float: right;
+ margin-right: 1%;
+ margin-bottom: 3%;
+ border: 1px solid #dbae84;
+}
+
+#fCadastro{
+font-family: 'Gabriola', sans-serif;
+font-size: 19px; 
+border: none;
+float: left;
+margin-left: 10%;
+width: 35%;
+}
+
+#titulo_form{
+  margin-top: 10%;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 29px; 
+  font-weight: 700; 
+  color: #000;
+}
+
+
+#msgDiv{
+  margin-top: 10%;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 29px; 
+  font-weight: 700; 
+  color: #000;
+  width: 100%;
+  text-align: center;
+}
+
+
+#fCadastro_2{
+font-family: 'Gabriola', sans-serif;
+font-size: 19px; 
+border: none;
+float: left;
+margin-left: 40%;
+width: 50%;
+}
+
+#botaoAcesso{
+  font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+  font-weight: 700; 
+  color: #FFF;
+  width: 80%;
+  height: 200px;
+  background-color: #8b4513;
+  border: 1px solid #FFF;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#botaoAcesso:hover{
+  background-color: rgba(79,79,79,0.7);	
+}
+
+#botoesOpcoes
+{
+width: 100%;
+text-align: center;
+vertical-align: middle;
+}
+
+
+
+#colunaBotoes{
+width: 50%;
+
+}
+
+#linhaBotoes{
+width: 50%;
+}
+
+
+#logout{
+float: right;
+margin-top: 2%;
+margin-right: 1%;
+width: 100px;
+height: 100px;
+background: url('../_imagens/logout1.png') no-repeat;
+}
+
+#logout:hover{
+float: right;
+margin-top: 2%;
+margin-right: 1%;
+width: 100px;
+height: 100px;
+background: url('../_imagens/logout2.png') no-repeat;
+}
+
+
+#alterar_dados{
+  margin-top: 10%;
+  margin-bottom: 1%;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 29px; 
+  font-weight: 700; 
+  color: #8b4513;
+  border: none;
+  text-align: center;
+}
+
+
+#alterar_dados2{
+  margin-top: 10%;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 29px; 
+  font-weight: 700; 
+  color: red;
+  border: none;
+  text-align: center;
+}
+
+#dados_contato{
+  position: absolute;
+  margin-top: 30%;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 29px; 
+  font-weight: 700; 
+  color: #8b4513;
+  width: 100%;
+  text-align: center;
+}
+
+#dados_contato2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 29px; 
+  font-weight: 700; 
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+#notaProduto{
+  font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+  font-weight: 700; 
+  color: #000;
+  width: 80%;
+}
+
+
+#colunaNotaProduto{
+  border: 1px solid #8b4513;
+  width: 5%;
+}
+
+
+#colunaNotaProduto2{
+  border: 1px solid #8b4513;
+  width: 15%;
+}
+
+
+#notaProduto2{
+  margin-top: 2%;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 19px; 
+  font-weight: 700; 
+  color: #000;
+  width: 80%;
+}
+
+
+
+#numPedidoExibir{
+  margin-top: 5%;
+  background-color: green;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 50px; 
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  border: none;
+  width: 100%;
+  
+}
+
+
+#botaoLoginExibir{
+  margin-top: 5%;
+  background-color: #8b4513;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 25px; 
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #8b4513;
+  width: 15%;
+  float: right;
+}
+
+#botaoLoginExibir:hover{
+  margin-top: 5%;
+  background-color: #000;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 25px; 
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  width: 15%;
+  float: right;
+}

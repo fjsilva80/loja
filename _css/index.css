@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+body{
+   background: url("../_imagens/fundo_background.jpg");
+   margin:auto;
+}
+
+div#interface_index{
+   background: url("../_imagens/background.jpg");
+   width:auto;
+   height:600px;
+}
+
+img#animacao{
+   position:absolute;
+   top:0;
+   width:auto;
+   height:auto;
+   left:50px;
+}
+
+figure.interativo {
+     position: absolute;
+	 top: 5px;
+	 margin-left: 10px;
+}
+
+figure.interativo img {                                            /* img no caso significa que a configuração será para tudo que tiver img*/
+     width: auto;
+     height: auto;  
+ }
+
+figure.interativo figcaption {
+     font-size: 20px;
+     opacity: 0;                                                     /*esconde a imagem sobreposta na outra*/
+     position: absolute;
+     top: 5px;
+     background-color: rgba(255,0,0,.3);                               /*transparência na imagem*/
+     color: white;
+     width: 80px;
+     height: auto;
+     padding: 100px;                                                  /*espaçamento */
+     box-sizing: border-box;                                         /*corrigi bordas dentro de um espaço*/
+     transition: opacity 1s;                                         /*tempo de transição da opacidade da figura*/
+	 border-radius: 5px 50px 50px 5px;
+	 margin:0px;
+}
+
+figure.interativo:hover figcaption {                               /*hover dispara uma formatação específica em uma imagem quando o usuário passar o mouse*/
+     opacity: 1;
+}
+
+a {    /*configuração dos links a href */
+     color: #ffffff;
+     text-decoration: none;
+}
+
+a:hover {   /*ao passar o mouse as letras no href ficarão na cor branca */
+     color: #000000;
+}
+
+iframe#frame-spec_index{
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 495px;
+  width: 850px;
+  height: 400px;
+  border: 2px;  /* remoção da borda do iframe*/
+  border-color: #ffffff;
+  overflow: hidden;      /* evita que a rolagem da página aconteça. obs.: não funciona em todos os navegadores foi adicionado na tag iframe
+na página specs - scrolling:"no"*/
+}
+
+
+p#Pcat{
+  
+  margin-left:-50px;
+	  }
+  
+p#Plj {
+ display: block;
+ margin-left:-50px;
+ width:300px;
+}
+p#Pcont{
+margin-left:-50px;
+}
+p#Pnov{
+margin-left:-50px;
+}
+p#Ppr{
+margin-left:-50px;
+width:300px;
+}

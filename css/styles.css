@@ -1,0 +1,201 @@
+body{
+	font-size:10px;
+	font-family:'Arial';
+	color:#555;
+	padding:2em;
+	margin:0 0 10em 0;
+}
+
+div, p, ul, ol, li, a, img, h1, h2, h3, h4{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+h1{
+	margin:0.5em 0 1em 0;
+	font-size:2em;
+}
+
+h2{
+	margin:2em 0 1em 0;
+	font-size:1.4em;
+}
+
+button{
+	padding:0.5em;
+	color:#000;
+	background:#555;
+	color:#FFF;
+	border-radius:0.5em;
+	box-shadow:1px 1px 1px #FFF;
+	font-size:1.7em;
+	cursor:pointer;
+	text-shadow:1px 1px 0 #DDD;
+}
+
+.groupData{
+	float:left;
+	width:28%;
+	padding:2%;
+	border:solid 1px #DDD;
+	margin:0 2% 0 0;
+	background:#EFEFEF;
+}
+
+.field{
+	margin:1.5em 0 1em 0;
+	font-size:1.4em;
+}
+
+.field input[type='text']{
+	padding:0.3em;
+	border:solid 1px #999;
+	width:90%;
+}
+
+.field input:focus{
+	background:#D6D8E0;
+	color:#000;
+	border:solid 1px #000;
+}
+
+.field.radio{
+	margin:0.8em 0;
+}
+
+.field.radio label{
+	display:inline;
+	margin:0 0 0 0.2em;
+}
+
+.field label{
+	display:block;
+	margin:0 0 0.2em 0;
+}
+
+.areaCode{ width:3em!important; }
+.phone{ width:11em!important; }
+.month, .addressState{ width:3em!important; }
+.year{ width:5em!important; }
+
+#cardNumber{width:15em!important;}
+
+.paymentMethodGroup{
+	display:none;
+}
+
+#cartData{
+	overflow:hidden;
+	border:solid 5px #555;
+	border-radius:0.5em;
+	background:#EEE;
+	padding:0 0 5em 0;
+	position:relative;
+}
+
+#cartData h4{
+	font-size:2em;
+	padding:0.5em;
+	background:#555;
+	color:#FFF;
+}
+
+#cartData table{
+	margin:0 0 1em 0;
+	padding:0;
+	border-collapse:collapse;
+	width:100%;
+}
+
+#cartData th{
+	font-weight:bold;
+	color:#FFF;
+	background:#555;
+	font-size:1.1em;
+	padding:0.5em;
+	border:solid 1px #999;
+}
+
+#cartData td{
+	padding:0.5em;
+	font-size:1.2em;
+	border:solid 1px #999;
+}
+
+#cartTotal{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	background:#555;
+	color:#FFF;
+	padding:1em;
+	font-size:1.5em;
+}
+
+#cartItemHidden{
+	display:none;
+}
+
+#installmentsWrapper{
+	display:none;
+}
+
+#paymentMethodLoading{
+	display:none;
+}
+
+#holderData{
+	display:none;
+}
+
+
+#cardBrand{
+	background:no-repeat right 10px;
+}
+
+#cardBrand[brand='visa']{ background-image:url('../images/visa.png'); }
+#cardBrand[brand='mastercard']{ background-image:url('../images/mastercard.png'); }
+#cardBrand[brand='amex']{ background-image:url('../images/amex.png'); }
+#cardBrand[brand='diners']{ background-image:url('../images/diners.png'); }
+#cardBrand[brand='aura']{ background-image:url('../images/aura.png'); }
+
+#boletoData{
+	background:url('../images/boleto.png') no-repeat 0 0;
+	padding:70px 0 0 0;
+}
+
+.bank-flag{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	overflow:hidden;
+	text-indent:-999px;
+	background:no-repeat center center;
+	border:solid 1px #AAA;
+	border-radius:0.5em;
+	margin:0 0.8em;
+	cursor:pointer;
+	background-color:#FFF;
+}
+.bank-flag:hover{
+	border-color:#000;
+}
+
+.bank-flag.bancodobrasil{ background-image:url('../images/bancodobrasil.png'); }
+.bank-flag.itau{ background-image:url('../images/itau.png'); }
+.bank-flag.bradesco{ background-image:url('../images/bradesco.png'); }
+.bank-flag.banrisul{ background-image:url('../images/banrisul.png'); }
+.bank-flag.hsbc{ background-image:url('../images/hsbc.png'); }
+
+
+.errors{
+	font-size:1.5em;
+	color:red;
+	padding:2em;
+}
+.success{
+	color:green;
+}
+
